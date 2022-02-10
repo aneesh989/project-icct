@@ -1,0 +1,322 @@
+/* global css */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.mainsection {
+  margin: auto;
+  max-width: 1400px;
+  width: 100%;
+}
+.index {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url(images/bg4_02.png);
+  /* background-size: 100% 100%; */
+  background-size: cover;
+}
+
+/* menu bar css */
+
+.secondarymenu {
+  width: 100%;
+  background: #606060;
+  font-size: 18px;
+  color: #fff;
+  font-family: monospace;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  word-spacing: 8px;
+}
+.main-menu {
+  width: auto;
+  display: flex;
+  background: #c3c3c399;
+  justify-content: space-around;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #0d71e0;
+}
+li a:active {
+  background-color: #04aa6d;
+}
+
+.ajlogo {
+  height: 80px;
+  width: 250px;
+  margin-left: 10px;
+}
+
+.nav {
+  height: 80px;
+  float: left;
+  width: auto;
+  margin-left: 930px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* section 1 css */
+
+.section1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+.text {
+  padding: 10px;
+  float: left;
+}
+p {
+  font-size: 25px;
+}
+
+.img1 {
+  width: 500px;
+  height: 500px;
+  float: right;
+  border-radius: 50%;
+}
+/* footer css */
+.footer {
+  background: #c3c3c399;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  font-family: sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  bottom: 0%;
+}
+.footertext {
+  font-size: 30px;
+}
+
+.socialmedia {
+  margin-left: 89%;
+}
+
+/* about us page css */
+.finalsection {
+  background-image: url("images/about\ background.jpg");
+  background-color: #04aa6d;
+  background-size: 100% 100%;
+}
+.about2 {
+  margin-top: 100px;
+  width: 100%;
+}
+.about-text h1 {
+  font-size: 22px;
+
+  text-align: center;
+}
+.about-text p {
+  font-size: 18px;
+
+  text-align: center;
+}
+
+/* contact us page css */
+.contactsection {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-head {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.contact-btn {
+  margin: 10;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #d8dddd;
+}
+.contact-btn:hover {
+  color: #fff;
+  background: #606060;
+}
+.contactfields {
+  padding: 10px 30px;
+  background: #d8dddd;
+  border: 1px solid;
+}
+.map {
+  height: 300px;
+  width: 50%;
+  float: left;
+  margin-right: 10%;
+}
+/* project page css */
+.p-img {
+  width: 250px;
+  height: 250px;
+}
+
+.slider-img {
+  width: 100%;
+  height: 550px;
+}
+.protext {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+/* for slider */
+.slider {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  position: relative;
+  background: #0d71e0;
+  box-shadow: 1px 2px 10px 5px white;
+  margin-top: 80px;
+  /* animation: slider 9s infinite linear; */
+}
+.mySlider {
+  height: 655px;
+  overflow: hidden;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 780px;
+  width: 120px;
+  padding: 14px;
+  transform: translate(0%, -50%);
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.8s;
+  user-select: none;
+  margin-top: 270px;
+  margin-left: 70px;
+}
+
+#project-prev,
+#project-next {
+  margin-top: 0px;
+  position: absolute;
+  top: 280px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #0d71e0;
+}
+.next {
+  right: 0%;
+}
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 10px;
+  background-color: rgb(8, 8, 8);
+  color: rgb(235, 232, 232);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* for text animation */
+.span1:after {
+  content: "";
+  animation: changetext 5s infinite linear;
+  color: #0d71e0;
+}
+@keyframes changetext {
+  0% {
+    content: "is";
+  }
+  50% {
+    content: "all";
+  }
+  75% {
+    content: "about";
+  }
+}
+
+/* footer css starts */
+.footerlist {
+  display: block;
+}
+.footer {
+  border-top: 5px solid #606060;
+  margin-top: 100px;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer1 h2 {
+  color: #606060;
+}
+.footer-text {
+  font-size: 14px;
+  color: #606060;
+}
+.footer-address p {
+  font-size: 18px;
+}
+
+.footer2 {
+  background-color: #c3c3c3;
+}
